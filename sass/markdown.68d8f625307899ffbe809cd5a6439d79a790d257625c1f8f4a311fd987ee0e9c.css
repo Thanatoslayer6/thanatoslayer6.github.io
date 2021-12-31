@@ -1,0 +1,110 @@
+.Content {
+  /* Markdown default element values */ }
+  .Content h1, .Content h2, .Content h3, .Content h4, .Content h5, .Content h6 {
+    color: var(--green);
+    font-family: 'Fira Code';
+    line-height: 1.2; }
+  .Content h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold; }
+  .Content p {
+    font-family: 'Anonymous Pro';
+    color: var(--base0);
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .Content blockquote {
+    border-left: 3px solid var(--yellow);
+    background-color: var(--base02);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-top: 1px;
+    padding-bottom: 1px; }
+  .Content ul, .Content ol {
+    color: var(--base1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 40px; }
+  .Content section {
+    font-family: 'Anonymous Pro'; }
+  .Content pre {
+    display: block;
+    white-space: pre-wrap;
+    margin: 1em 0;
+    color: var(--base01); }
+  .Content a {
+    color: var(--cyan); }
+  .Content hr {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: solid 2px var(--base1); }
+  .Content mark {
+    background-color: var(--green); }
+  .Content table {
+    border-spacing: 0; }
+  .Content tbody {
+    box-sizing: inherit;
+    color: var(--base1); }
+  .Content thead {
+    background: var(--base02);
+    color: var(--yellow); }
+  .Content table th, .Content table td {
+    padding: .5em .5em;
+    border: 1px double var(--base0); }
+  .Content cite {
+    font-style: italic;
+    padding: 1em; }
+    .Content cite:before {
+      content: "\2014";
+      margin-right: 2px; }

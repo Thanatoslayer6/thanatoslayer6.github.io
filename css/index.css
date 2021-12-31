@@ -1,0 +1,47 @@
+/* Main div (father)*/
+.Main-Content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+    left: 20%;
+    height: 100%;
+    justify-content: center;
+}
+
+/* Info (Child)*/
+.Info {
+    position: relative;
+    bottom: 15%;
+}
+
+#Main-heading, #Main-handle, #Main-subheading {
+    text-align: center;
+}
+
+#Main-heading {
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Fira Code';
+    color: var(--base2);
+}
+
+#Main-handle {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: var(--base00);
+    font-family: 'Fira Code';
+}
+
+#Main-subheading {
+    font-family: monospace;
+    padding-top: 20px;
+    color: var(--base1);
+}
+
+/* Try to center container when width is less than 600 */
+@media (max-width: 600px){
+    .Main-content {
+        left: 15%;
+    }
+}

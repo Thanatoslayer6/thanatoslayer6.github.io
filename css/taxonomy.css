@@ -1,0 +1,87 @@
+/* Desktop */
+@media (min-width: 600px){
+    /* Father div */
+    .Container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+    /* Title */
+    .Post-heading {
+        font-family: 'Fira Code';
+        width: 50%;
+        padding: 2em 4em 1em 2em; 
+        margin: 0 2em 0 2em;
+        text-align: left;
+        position: relative;
+        left: 20%;
+    }
+    .Post-heading h1 {
+        padding: .4em;
+        display: inline;
+        color: var(--base2);
+        border-bottom: 2px solid var(--base1);
+    }
+
+    /* Posts */
+    .Posts {
+        position: relative;
+        left: 20%;
+        width: 70%;
+        padding: 1em;
+        margin: 1em 2em 0 2em;
+        text-align: left;
+    }
+    .tags a {
+        font-family: 'Fira Code';
+        font-size: 1.4em;
+        text-decoration: none;
+        color: var(--green);
+    }
+    sup {
+        color: var(--yellow);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .Container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    /* Title */
+    .Post-heading {
+        font-family: 'Fira Code';
+        padding: 3em 0 2em 0;
+        text-align: center;
+    }
+    .Post-heading h1 {
+        padding: .4em;
+        display: inline;
+        color: var(--base2);
+        border-bottom: 2px solid var(--base1);
+    }
+
+    /* Posts */
+    .Posts {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .tags a {
+        font-family: 'Fira Code';
+        font-size: 1.4em;
+        text-decoration: none;
+        color: var(--green);
+    }
+    sup {
+        color: var(--yellow);
+    }
+}

@@ -1,0 +1,114 @@
+/* DESKTOP */
+/* Navigation sidebar */
+.Navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    background-color: var(--base02);
+    z-index: 5;
+}
+
+/* Menu items */
+.Item-list {
+    position: relative;
+    top: 10%;
+}
+
+.Items {
+    list-style: none;
+    text-align: right;
+    padding: 1.5em;
+    transition: .25s;
+    transition-timing-function: ease-in;
+}
+
+.Items a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    color: var(--yellow);
+    transition: 250ms;
+}
+
+/* Animations for items */
+.Items a:hover {
+    color: #d33682;
+}
+
+.Items:hover {
+    padding-right: 1em;
+}
+
+/* Menu button (close/open) hide all for now...*/
+#chbox {
+    display: none;
+}
+
+.Menu-icon-open, .Menu-icon-close {
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    padding: .5em;
+    cursor: pointer;
+    z-index: 0;
+}
+
+/* Responsive menu (mobile)*/
+@media (max-width: 600px){
+
+    .Menu-icon-open {
+        display: block;
+        z-index: 10;
+        transition: 2s;
+    }
+
+    .Navigation {
+        width: 0px;
+        visibility: hidden;
+        transition: .7s;
+        opacity: 0.95;
+    }
+
+    .Items {
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    /* When menu is clicked */
+    #chbox:checked + .Navigation {
+        visibility: visible;
+        width: 80%;
+    }
+
+    #chbox:checked + .Navigation .Item-list .Items {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #chbox:checked ~ .Menu-icon-open {
+        display: none;
+    }
+
+    #chbox:checked ~ .Menu-icon-close {
+        position: fixed;
+        display: block;
+        z-index: 10;
+        transition: 2s;
+    }
+
+    /* Animations for menu-icon */
+    /* When opening (hovering)*/
+    .Menu-icon-open:hover {
+        color: gray;
+    }
+
+    /* When closing (hovering) */
+    #chbox:checked ~ .Menu-icon-close:hover {
+        color: gray;
+    }
+}
+
