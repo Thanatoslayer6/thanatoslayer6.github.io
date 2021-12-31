@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/index.css"/>
+<link rel="stylesheet" href="/css/social.css"/>
+
+{{ partialCached "nav.html" . }}
+<div class="Main-Content">
+    <div class="Info">
+        <h1 id="Main-heading"> {{ .Params.heading }} </h1>
+        <h5 id="Main-handle"> {{ .Params.handle }}</h5>
+        {{ partial "social.html" . }}
+        <h2 id="Main-subheading"> {{ .Params.subheading }}</h2>
+    </div>
+</div>

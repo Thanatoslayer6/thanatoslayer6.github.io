@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/single.css"/>
+{{ partialCached "nav.html" . }}
+
+<div class="Container">
+    <div class="Title">
+        <h1>{{ .Title }}</h1>
+        <time>{{ .PublishDate.Format "Posted on — [2006-01-02]" }}</time> 
+    </div>
+    <div class="Content">
+        {{ .Content }}
+    </div>
+    
+    <!-- /* Pagination */ -->
+    <div class="Blog-Pagination">
+        {{ with .PrevInSection }}
+        <div class="Previous">
+            <a href="{{ .RelPermalink }}">« {{ .Title }}</a>
+        </div>
+        {{ end }}
+        {{ with .NextInSection }}
+        <div class="Next">
+            <a href="{{ .RelPermalink }}">{{ .Title }} »</a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+

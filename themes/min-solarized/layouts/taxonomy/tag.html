@@ -1,0 +1,43 @@
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/list.css"/>
+<link rel="stylesheet" href="/css/pagination.css"/>
+{{ partialCached "nav.html" . }}
+{{ $dateFormat := .Site.Params.dateFormat | default "(Mon) Jan 2, 2006" }}     
+{{ $rl := .RelPermalink }}
+
+<div class="Container">
+    <div class="Post-heading">
+        <h1>{{ $rl }}</h1>
+    </div>
+    <div class="Posts">
+        <ul>
+        {{ range .Paginator.Pages }}
+            <li class="post-item">
+                <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time class="post-date" datetime="{{ .Date }}">{{ .Date.Format $dateFormat }}</time> 
+                <div class="post-summary">
+                    {{ if .Description }}
+                        {{ .Description | truncate 120 }}
+                    {{ else }}
+                        {{ .Summary | truncate 120 }}
+                    {{ end }}
+                </div>
+                <div class="tags">
+                    {{ with .Params.tags }}
+                        <b>Tags:</b>
+                        {{ range . }}
+                        {{ $path := printf "/tags/%s/" . | urlize }}
+                            {{ if eq $path $rl }}
+                                <a class="active-tag" href="{{ $path }}">#{{ . }}</a>
+                            {{ else }}
+                                <a class="inactive-tag" href="{{ $path }}">#{{ . }}</a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </li>
+        {{ end }}
+        </ul>
+    </div>
+    {{ partial "pagination.html" . }}
+</div>

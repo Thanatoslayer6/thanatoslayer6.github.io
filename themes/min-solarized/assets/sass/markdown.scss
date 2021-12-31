@@ -1,0 +1,144 @@
+.Content {
+    /* Markdown default element values */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--green);
+        font-family: 'Fira Code';
+        line-height: 1.2;
+    }
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-top: 0.83em;
+        margin-bottom: 0.83em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    h4 {
+        display: block;
+        font-size: 1em;
+        margin-top: 1.33em;
+        margin-bottom: 1.33em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    h5 {
+        display: block;
+        font-size: .83em;
+        margin-top: 1.67em;
+        margin-bottom: 1.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    h6 {
+        display: block;
+        font-size: .67em;
+        margin-top: 2.33em;
+        margin-bottom: 2.33em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: 'Anonymous Pro';
+        color: var(--base0);
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    blockquote {
+        border-left: 3px solid var(--yellow);
+        background-color: var(--base02);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-left: 1em;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    ul, ol {
+        color: var(--base1);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 40px;
+    }
+
+    section {
+        font-family: 'Anonymous Pro';
+    }
+
+    pre {
+        display: block;
+        white-space: pre-wrap;
+        margin: 1em 0;
+        color: var(--base01);
+    }
+
+    a {
+        color: var(--cyan);
+    }
+
+    hr {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border: solid 2px var(--base1);
+    }
+
+    mark {
+        background-color: var(--green);
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    tbody {
+        box-sizing: inherit;
+        color: var(--base1);
+    }
+
+    thead {
+        background: var(--base02);
+        color: var(--yellow);
+    }
+
+    table th, table td {
+        padding: .5em .5em;
+        border: 1px double var(--base0);
+    }
+
+    cite {
+        font-style: italic;
+        padding: 1em;
+        &:before {
+            content:"\2014";
+            margin-right: 2px;
+        }
+    }
+}

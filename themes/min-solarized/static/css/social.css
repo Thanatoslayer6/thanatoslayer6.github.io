@@ -1,0 +1,15 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    padding-right: .5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(68%) sepia(6%) saturate(435%) hue-rotate(131deg) brightness(92%) contrast(90%);
+}
+
+

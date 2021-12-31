@@ -1,0 +1,18 @@
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/taxonomy.css"/>
+{{ partialCached "nav.html" . }}
+
+<div class="Container">
+    <div class="Post-heading">
+        <h1>{{ .RelPermalink }}</h1>
+    </div>
+    <div class="Posts">
+        <div class="tags">
+        {{ range $tag, $value := $.Site.Taxonomies.tags }}
+            <a href="{{ "/tags/" | relLangURL}}{{ $tag | urlize }}/">#{{ $tag }}</a> 
+            <sup>({{ len $value }})</sup>
+        {{ end }}
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,9 @@
+{{ $def := resources.Get "sass/default.scss" }}
+{{ $md := resources.Get "sass/markdown.scss" }}
+{{ $defstyles := $def | resources.ToCSS | resources.Fingerprint }}
+{{ $mdstyles := $md | resources.ToCSS | resources.Fingerprint }}
+
+<title>{{ .Title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ $defstyles.RelPermalink }}" integrity="{{ $defstyles.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $mdstyles.RelPermalink }}" integrity="{{ $mdstyles.Data.Integrity }}">

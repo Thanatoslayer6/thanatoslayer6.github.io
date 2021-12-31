@@ -1,0 +1,39 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = ''
+paginate = 5
+theme = "min-solarized"
+
+[params]
+  # Icon order here change to "" to display nothing
+  iconOrder = [ "GitHub" ]
+  github = "https://github.com/yourusernamehere"
+  twitter = "https://twitter.com/yourusernamehere"
+
+## Menu change the values if you want 
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "blog"
+    url = "/blog"
+    weight = 2
+
+  [[menu.main]]
+    name = "tags"
+    url = "/tags"
+    weight = 3
+
+## Changed Markup settings for compatability
+[markup]
+  [markup.highlight]
+    codeFences = true
+    
+  # Set to false to disallow raw HTML in markdown files
+  [markup.goldmark.renderer]
+      unsafe = true
+      hardwraps = true
+

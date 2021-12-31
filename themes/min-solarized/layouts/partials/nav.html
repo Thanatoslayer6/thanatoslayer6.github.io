@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/nav.css" />
+<header>
+  <input type="checkbox" id="chbox" />
+    <nav class="Navigation">
+      <ul class="Item-list">
+        {{ range.Site.Menus.main }}
+        <li class="Items">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  <label for="chbox" class="Menu-icon-open">&#9776;</label>
+  <label for="chbox" class="Menu-icon-close">&#x2715;</label>
+</header>

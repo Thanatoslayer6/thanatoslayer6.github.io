@@ -1,0 +1,105 @@
+/* DESKTOP */
+@media (min-width: 600px){
+    .Container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+    /* Title div */
+    .Title {
+        font-family: 'Fira Code';
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+    /* Title h1 child */
+    .Title h1 {
+        color: var(--base3);
+    }
+    /* Time */
+    time {
+        font-family: 'Fira Code';
+        font-style: italic;
+        font-size: small;
+        color: var(--base01);
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Content */
+    .Content {
+        margin: 0 200px 0 200px;
+    }
+
+    /* Pagination */
+    .Blog-pagination {
+        font-family: monospace;
+        font-size: 1.2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 200px 0 200px;
+    }
+    .Next, .Previous {
+        margin: 1.2em;
+    }
+    .Next a, .Previous a {
+        text-decoration: none;
+        color: var(--cyan);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+    /* Father container */
+    .Container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    /* Title div */
+    .Title {
+        font-family: 'Fira Code';
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+    /* Title h1 child */
+    .Title h1 {
+        color: var(--base3);
+    }
+    /* Time */
+    time {
+        font-family: 'Fira Code';
+        font-style: italic;
+        font-size: small;
+        color: var(--base01);
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Content */
+    .Content {
+        margin: 0 1em 0 1em;
+    }
+
+    /* Pagination */
+    .Blog-pagination {
+        font-family: monospace;
+        font-size: 1.2em;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+    .Next, .Previous {
+        margin: 1.2em;
+    }
+    .Next a, .Previous a {
+        text-decoration: none;
+        color: var(--cyan);
+    }
+
+}
