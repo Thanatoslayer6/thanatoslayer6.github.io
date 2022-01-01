@@ -20,7 +20,6 @@
     }
     /* Time */
     time {
-        font-family: 'Fira Code';
         font-style: italic;
         font-size: small;
         color: var(--base01);
@@ -74,7 +73,6 @@
     }
     /* Time */
     time {
-        font-family: 'Fira Code';
         font-style: italic;
         font-size: small;
         color: var(--base01);

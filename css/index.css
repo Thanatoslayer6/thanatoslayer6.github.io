@@ -16,13 +16,13 @@
 }
 
 #Main-heading, #Main-handle, #Main-subheading {
+    font-family: 'Fira Code';
     text-align: center;
 }
 
 #Main-heading {
     font-size: 2rem;
     padding-top: 2rem;
-    font-family: 'Fira Code';
     color: var(--base2);
 }
 
@@ -30,7 +30,6 @@
     padding-top: 5px;
     padding-bottom: 20px;
     color: var(--base00);
-    font-family: 'Fira Code';
 }
 
 #Main-subheading {
