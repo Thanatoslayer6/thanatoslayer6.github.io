@@ -1,0 +1,3 @@
+[submodule "themes/min-solarized"]
+	path = themes/min-solarized
+	url = https://github.com/Thanatoslayer6/min-solarized
