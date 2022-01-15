@@ -1,6 +1,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=stylesheet href=/sass/default.3cb89cc9dd057190345020efbf387aec3de895d183170196f8ab46d8fbfaeb22.css integrity="sha256-PLicyd0FcZA0UCDvvzh67D3oldGDFwGW+KtG2Pv66yI=">
-<link rel=stylesheet href=/css/taxonomy.css>
+<link rel=stylesheet href=/css/list.css>
+<link rel=stylesheet href=/css/pagination.css>
 <link rel=stylesheet href=/css/nav.css>
 <header>
 <input type=checkbox id=chbox>
@@ -20,19 +21,29 @@
 <label for=chbox class=Menu-icon-open>&#9776;</label>
 <label for=chbox class=Menu-icon-close>&#x2715;</label>
 </header>
-<title>Categories</title>
+<title>Tags | random</title>
 <div class=Container>
 <div class=Post-heading>
-<h1>/categories/</h1>
+<h1>/tags/random/</h1>
 </div>
 <div class=Posts>
-<div class=tags>
-<a href=/tags/npm/>#npm</a>
-<sup>(1)</sup>
-<a href=/tags/personal/>#personal</a>
-<sup>(2)</sup>
-<a href=/tags/random/>#random</a>
-<sup>(1)</sup>
+<ul>
+<li class=post-item>
+<h3 class=post-title><a href=/blog/weird_blog/>Weird_Blog</a></h3>
+<time class=post-date datetime="2022-01-14 14:03:13 +0800 +0800">(Fri) Jan 14, 2022</time>
+<div class=post-summary>
+Hey there&mldr; again, I really don&rsquo;t know what to say but, there are alot of things happening in my mind
+right …
 </div>
+<div class=tags>
+<b>Tags:</b>
+<a class=active-tag href=/tags/random/>#random</a>
+<a class=inactive-tag href=/tags/personal/>#personal</a>
+<a class=inactive-tag href=/tags/npm/>#npm</a>
+</div>
+</li>
+</ul>
+</div>
+<div class=Pagination>
 </div>
 </div>
